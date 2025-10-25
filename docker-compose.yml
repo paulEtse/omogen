@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-3.5-turbo}
+      - DATABASE_PATH=${DATABASE_PATH:-/app/data/cv_filtering.db}
+      - CACHE_TTL_HOURS=${CACHE_TTL_HOURS:-168}
+      - MATCH_THRESHOLD=${MATCH_THRESHOLD:-70}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    restart: unless-stopped

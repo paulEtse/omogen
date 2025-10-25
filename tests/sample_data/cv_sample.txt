@@ -1,0 +1,19 @@
+John Doe
+Software Engineer
+
+SKILLS
+- Python, FastAPI, Docker
+- AWS, Kubernetes
+- PostgreSQL, MongoDB
+- 5 years of experience in software development
+
+LOCATION
+Paris, France
+
+EDUCATION
+Master's in Computer Science
+University of Paris, 2019
+
+CERTIFICATIONS
+AWS Certified Solutions Architect, 2021
+Google Cloud Professional Developer, 2022

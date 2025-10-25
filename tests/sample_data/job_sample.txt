@@ -1,0 +1,20 @@
+Senior Backend Engineer
+
+Required Skills:
+- Python
+- FastAPI or Flask
+- Docker
+- AWS
+
+Nice to Have:
+- Kubernetes
+- PostgreSQL
+- Experience with LLMs
+
+Experience: 3+ years required
+
+Location: Remote or Paris, France
+
+Education: Bachelor's degree in Computer Science or related field
+
+Certifications: AWS certification preferred

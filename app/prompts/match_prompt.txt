@@ -1,0 +1,42 @@
+You are an expert recruiter evaluating a CV against a job description.
+
+CV/RESUME:
+{cv_text}
+
+JOB DESCRIPTION:
+{job_text}
+
+Evaluate the candidate for this job position. Score each criterion from 0-100 and provide an overall assessment.
+
+Return ONLY a valid JSON object with this exact structure:
+{{
+  "match": true/false,
+  "overall_score": 0-100,
+  "criteria_scores": {{
+    "skills": 0-100,
+    "experience": 0-100,
+    "location": 0-100,
+    "education": 0-100,
+    "certifications": 0-100
+  }},
+  "explanation": "Detailed explanation of the match decision"
+}}
+
+Evaluation Criteria:
+- skills: Match between required/nice-to-have skills and candidate's skills
+- experience: Years of relevant experience alignment
+- location: Geographic compatibility (consider remote, hybrid, on-site)
+- education: Educational background match
+- certifications: Professional certifications alignment
+
+Scoring Guidelines:
+- skills: 40% weight
+- experience: 25% weight
+- location: 15% weight
+- education: 15% weight
+- certifications: 5% weight
+
+Calculate overall_score as weighted average.
+Set match=true if overall_score >= 70, otherwise match=false.
+
+Return ONLY the JSON object, no markdown, no code blocks, no extra text.
