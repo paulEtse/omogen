@@ -41,7 +41,7 @@ Match a CV against a job description.
 
 **Request**: Multipart form data
 - `cv`: File (PDF, DOCX, TXT, MD)
-- `job_description`: File (MD, TXT)
+- `job_description`: File (PDF, DOCX, TXT, MD)
 
 **Response**:
 ```json
