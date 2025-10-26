@@ -21,7 +21,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-data/
+data/*.db
+data/*.sqlite
 *.db
 *.sqlite
 .env
